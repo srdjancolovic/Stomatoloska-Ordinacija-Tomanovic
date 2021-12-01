@@ -1,0 +1,198 @@
+$navBarBgColor: #99d590;
+$navLinksColor: white;
+
+$aboutSectionBg: #f1f4ffff;
+$aboutSectionTextColor: black;
+
+$contactSectionBg: #f1f4ffff;
+$contactTextColor: black;
+
+$tourismIntroBg: #f1f4ffff;
+$tourismIntroColor: black;
+
+$servicesBg: #f1f4ffff;
+$servicesTextColor: black;
+
+$blogBg: #f1f4ffff;
+$blogTextColor: black;
+
+$buttonBg: rgba(153, 213, 144, 0.6);
+$buttonHoverBg: rgb(115, 175, 121);
+
+///Priclelist slider color
+$priceListSliderColor: rgba(153, 213, 144, 0.7);
+$priceListSliderText: white;
+$categoryNameUnderline: #f5f5f5;
+$priceListItemBorderColor: rgba(255, 255, 255, 0.6);
+
+$topBtnBg: white;
+$topBtnColor: #99d590;
+$topBtnColorHover: white;
+$topBtnHover: rgb(115, 175, 121);
+
+///NAv links
+$navLinksDeskt: 19px;
+$navLinksMax576: 18px;
+
+////h1 Font sizes
+$h1Deskt: 43px;
+$h1Max768: 35px;
+$h1Max576: 28px;
+
+/////h2 Font sizes
+$h2Max768: 30px;
+$h2Max576: 28px;
+
+/////h3 Font sizes
+$h3Deskt: 28px;
+$h3Max768: 26px;
+$h3Max576: 24px;
+
+/////h4 Font sizes
+$h4Deskt: 18px;
+$h4Max768: 18px;
+$h4Max576: 17px;
+
+/////h5 Font sizes
+$h5Deskt: 23px;
+$h5Max768: 22px;
+$h5Max576: 21px;
+
+//////p Font sizes
+$pDeskt: 19px;
+$pMax768: 18px;
+$pMax576: 17px;
+
+////li Font sizes
+$liDeskt: 19px;
+$liMax768: 18px;
+$liMax576: 17px;
+
+/////PRICE Font sizes
+$priceDeskt: 20px;
+$priceMax768: 19px;
+$priceMax576: 19px;
+
+///About button on home page
+$fontSizeDeskt: 20px;
+$fontSizeMax768: 19px;
+$fontSizeMax576: 16px;
+
+//Social links on home page
+$socialFontMax768: 24px;
+$socialFontMax576: 21px;
+
+///span FONT SIZES
+$spanDeskt: 60px;
+$spanMax768: 50px;
+$spanMax576: 45px;
+
+$listSpanColor: #99d590;
+
+///////MIXINS
+@mixin headingH2 {
+  padding-top: 90px;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 35px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    background: rgb(84, 211, 143);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin headingH3 {
+  text-transform: uppercase;
+  font-size: $h3Deskt;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 60px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    background: rgb(84, 211, 143);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@mixin button {
+  padding: 15px 60px;
+  background: $buttonBg;
+  color: white;
+  border-radius: 50px;
+  margin-top: 30px;
+  // margin-bottom: 10px;
+  z-index: 1000;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: 0.5s ease;
+  &:hover {
+    background: $buttonHoverBg;
+  }
+}
+@mixin offset {
+  &::before {
+    content: "";
+    height: 90px;
+    display: block;
+    margin-top: -90px;
+  }
+}
+@mixin socialButtons {
+  a {
+    color: white;
+    font-size: 30px;
+    padding: 5px 15px;
+    border: 2px solid white;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+  }
+  .insta {
+    background: #d6249f;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    &:hover {
+      background: #d6249f;
+      color: white;
+    }
+  }
+  .facebook {
+    background: #3b5998;
+    &:hover {
+      background: #647db3;
+      color: white;
+    }
+  }
+}
+@mixin blogText {
+  font-size: $pDeskt;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 30px;
+  color: $blogTextColor;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+}

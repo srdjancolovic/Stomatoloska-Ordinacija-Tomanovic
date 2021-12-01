@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Lato";
+}
+
+@import "./vars";
+@import "./navBar";
+@import "./homePage";
+@import "./about";
+@import "./priceList";
+@import "./contact";
+@import "./topBtn";
+@import "./tourism";
+@import "./tourismIntro";
+@import "./services";
+@import "./priceComparison";
+@import "./preloader";
+@import "./offerPattern";
+
+.os-animation {
+  opacity: 0;
+  margin: 0;
+  max-width: 100%;
+}
+.os-animation.animated {
+  opacity: 1;
+}
+
+//Disable button clickabiltiy when menu is opened

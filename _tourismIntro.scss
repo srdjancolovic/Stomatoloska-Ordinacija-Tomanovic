@@ -1,0 +1,86 @@
+.intro__text {
+  background-color: $tourismIntroBg;
+
+  .heading {
+    @include headingH2;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .list {
+    list-style: none;
+    padding-left: 30px;
+    li {
+      line-height: 2;
+      font-size: $liDeskt;
+      color: $tourismIntroColor;
+      span {
+        margin-right: 15px;
+        color: $listSpanColor;
+      }
+    }
+  }
+  .about__toursim {
+    font-size: $pDeskt;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-align: justify;
+    color: $tourismIntroColor;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro__text {
+    .list__wrapper {
+      margin-bottom: 60px;
+      .list {
+        padding-left: 0;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    .about__toursim {
+      padding: 0 40px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .intro__text {
+    .heading {
+      font-size: $h2Max768;
+    }
+    .list__wrapper {
+      .list {
+        li {
+          font-size: $liMax768;
+        }
+      }
+    }
+    .about__toursim {
+      padding: 0 30px;
+      font-size: $pMax768;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .intro__text {
+    .heading {
+      font-size: $h2Max576;
+    }
+    .list__wrapper {
+      width: 100%;
+      margin-bottom: 60px;
+      .list {
+        padding-left: 0;
+        width: 90%;
+        margin: 0 auto;
+        li {
+          font-size: $liMax576;
+        }
+      }
+    }
+    .about__toursim {
+      font-size: $pMax576;
+      padding: 0 20px;
+    }
+  }
+}

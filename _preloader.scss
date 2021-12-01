@@ -1,0 +1,38 @@
+.preloader {
+  position: fixed;
+  background-color: white;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 250px;
+    animation: logoAnimation 1s infinite alternate;
+  }
+}
+@media (max-width: 768px) {
+  .preloader {
+    img {
+      width: 200px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .preloader {
+    img {
+      width: 150px;
+    }
+  }
+}
+@keyframes logoAnimation {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}

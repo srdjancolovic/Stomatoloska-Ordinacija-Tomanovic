@@ -1,0 +1,155 @@
+.price__comparison {
+  padding-bottom: 90px;
+  background-color: $servicesBg;
+  text-align: center;
+  overflow-y: hidden;
+  .heading {
+    @include headingH2;
+  }
+
+  h3 {
+    margin-top: 60px;
+    font-size: $h3Deskt;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    color: $servicesTextColor;
+  }
+  ul {
+    margin-top: 40px;
+    list-style: none;
+    text-align: left;
+    li {
+      line-height: 2;
+      font-size: $liDeskt;
+      color: $servicesTextColor;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        margin-right: 15px;
+        color: $listSpanColor;
+      }
+    }
+  }
+  .warranty__text {
+    margin-top: 107px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-size: $pDeskt;
+    text-align: justify;
+    padding-top: 60px;
+  }
+
+  .price__comparison__text {
+    font-size: $pDeskt;
+    padding: 60px 30px 30px 30px;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+  }
+  .pricelist__btn {
+    @include button;
+  }
+}
+@media (max-width: 1200px) {
+  .price__comparison {
+    h3 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .list {
+      width: 100%;
+      ul {
+        width: 55%;
+        margin: 0 auto;
+      }
+    }
+    .warranty__desc {
+      .warranty__text {
+        margin-top: 60px;
+        padding: 0 30px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .price__comparison {
+    .list {
+      ul {
+        width: 75%;
+      }
+    }
+    .warranty__desc {
+      .warranty__text {
+        padding: 0 40px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .price__comparison {
+    .heading {
+      font-size: $h2Max768;
+    }
+    h3 {
+      font-size: $h3Max768;
+    }
+    .list {
+      ul {
+        width: 95%;
+        li {
+          font-size: $liMax768;
+        }
+      }
+    }
+    .warranty__desc {
+      .warranty__text {
+        padding: 0 30px;
+        font-size: $pMax768;
+      }
+    }
+    .price__comparison__text {
+      font-size: $pMax768;
+    }
+    .pricelist__btn {
+      font-size: $fontSizeMax768;
+      padding: 15px 40px;
+      &:hover {
+        background: $buttonBg;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .price__comparison {
+    .heading {
+      font-size: $h2Max576;
+    }
+    h3 {
+      font-size: $h3Max576;
+    }
+    .list {
+      ul {
+        width: 90%;
+        li {
+          font-size: $liMax576;
+        }
+      }
+    }
+    .warranty__desc {
+      .warranty__text {
+        padding: 0 20px;
+        font-size: $pMax576;
+      }
+    }
+    .price__comparison__text {
+      font-size: $pMax576;
+      padding: 60px 20px 30px 20px;
+    }
+    .pricelist__btn {
+      font-size: $fontSizeMax576;
+      padding: 15px 30px;
+    }
+  }
+}

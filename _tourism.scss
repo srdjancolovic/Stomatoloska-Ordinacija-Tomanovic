@@ -1,0 +1,22 @@
+//Dental toursim image slider
+.image__slider {
+  width: 100%;
+  height: 50vh;
+  cursor: grab;
+  .swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-wrapper {
+      .swiper-slide {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
